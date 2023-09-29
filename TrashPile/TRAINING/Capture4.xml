@@ -1,0 +1,26 @@
+<annotation>
+	<folder>TRAINING</folder>
+	<filename>Capture4.PNG</filename>
+	<path>C:\Users\jakhs\OneDrive - ROCKWOOL Group\Documents\SandeepAdHoc\TrashPile\TRAINING\Capture4.PNG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2054</width>
+		<height>1239</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pile</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>999</xmin>
+			<ymin>652</ymin>
+			<xmax>1246</xmax>
+			<ymax>797</ymax>
+		</bndbox>
+	</object>
+</annotation>
