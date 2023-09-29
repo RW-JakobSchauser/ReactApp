@@ -25,9 +25,9 @@ class SiloStatusApp(VideoStream):
 		self.model = ResNet(num_classes=2)
 		self.model.load_state_dict(torch.load(weights_path, map_location = device))
 		self.model.eval()
-		# self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1649152")
+		self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1649152")
 		# self.stream = cv2.VideoCapture("rtsp://admin:fof2022venom@10.6.132.13")
-		self.stream = cv2.VideoCapture("../fake_feeds/esteban_fake.mp4")
+		# self.stream = cv2.VideoCapture("../fake_feeds/esteban_fake.mp4")
 
 		self.state = "Filling"
 		self.preprocess = transforms.Compose([

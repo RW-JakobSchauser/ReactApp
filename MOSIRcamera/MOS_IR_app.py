@@ -30,9 +30,9 @@ class MOS_IR_app(VideoStream):
         self.right = 0
 
         # self.stream = cv2.VideoCapture("MOS_IR.avi")
-        # self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1638912")
+        self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1638912")
         # self.stream = cv2.VideoCapture("rtsp://admin:fof2022venom@10.6.132.13")
-        self.stream = cv2.VideoCapture("../fake_feeds/mos_ir_fake.mp4")
+        # self.stream = cv2.VideoCapture("../fake_feeds/mos_ir_fake.mp4")
 
 
         self.image = None

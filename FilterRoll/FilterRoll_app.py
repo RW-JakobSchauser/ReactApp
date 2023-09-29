@@ -20,9 +20,9 @@ class FilterRoll_app(VideoStream):
     def __init__(self, analyze_frame):
         self.analyze_frame = analyze_frame
         # self.stream = cv2.VideoCapture("C:/Users/jakhs/OneDrive - ROCKWOOL Group/Documents/SandeepAdHoc/FilterRoll/combined_filter_roll-short.mp4")
-        # self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1649152")
+        self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1649152")
         # self.stream = cv2.VideoCapture("rtsp://admin:fof2022venom@10.6.132.13")
-        self.stream = cv2.VideoCapture("../fake_feeds/filter_roll_fake.mp4")
+        # self.stream = cv2.VideoCapture("../fake_feeds/filter_roll_fake.mp4")
 
         self.how_filled = "Filter capacity good"
         self.amount_filled = 0
