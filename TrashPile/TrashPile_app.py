@@ -35,9 +35,9 @@ class TrashPile_app(VideoStream):
     def __init__(self, analyze_frame):
         self.analyze_frame = analyze_frame
         # self.stream = cv2.VideoCapture("C:/Users/jakhs/OneDrive - ROCKWOOL Group/Documents/SandeepAdHoc/TrashPile/avfall.mp4")
-        self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1645568")
+        # self.stream = cv2.VideoCapture("rtsp://Viewer:Only4FOF!@MOS-CCTV-Process.rwgroup.org:8554/1645568")
         # self.stream = cv2.VideoCapture("rtsp://admin:fof2022venom@10.6.132.13:554/ch1/main/av?stream")
-        # self.stream = cv2.VideoCapture("../fake_feeds/trash_pile_fake.mp4")
+        self.stream = cv2.VideoCapture("C:/Users/jakhs/OneDrive - ROCKWOOL Group/Documents/MergedModelViewV2/fake_feeds/trash_pile_fake.mp4")
 
         width = int(self.stream.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(self.stream.get(cv2.CAP_PROP_FRAME_HEIGHT))
